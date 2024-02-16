@@ -39,7 +39,6 @@ export default function App() {
       <Image className="rounded-full w-80 h-80 mx-auto" source={require('./assets/images/icon.jpeg')} />
 
       <Text className="font-extrabold text-2xl mx-auto pt-7">Arthur Borges</Text>
-      <Text className="text-lg mx-auto pt-5" ></Text>
       <Text className="text-lg mx-auto pt-2" >Estudante de Desenvolvimento de Sistemas no SENAI Valinhos{'\n'}Cursando o terceiro ano do Ensino Médio</Text>
       <ScrollView>
       <Text className="font-semibold text-2xl mx-auto pt-5">Sobre:</Text>
@@ -54,9 +53,31 @@ export default function App() {
             itemWidth={300}
           />
         </View>
+      <Text className="font-semibold text-2xl mx-auto pt-5">Contato:</Text>
+      <Text className="text-base mx-auto pt-2">
+        <Text className="font-bold">E-mail:</Text>
+        <Image className="w-10 h-10" source={require('./assets/images/gmail.png')} />
+        <Text>
+          {'janbgsa@gmail.com'}
+        </Text>
+      </Text>
+      <Text className="text-base mx-auto pt-2">
+        <Text className="font-bold">Telefone:</Text>
+        <Image className="w-10 h-10" source={require('./assets/images/whatsapp.png')} />
+        <Text>
+          {'(19) 9 9713-7980'}
+        </Text>
+      </Text>
+      <Text className="text-base mx-auto pt-2">
+        <Text className="font-bold">LinkedIn:</Text>
+        <Image className="w-10 h-10" source={require('./assets/images/linkedin.png')} />
+        <Text>
+          {'https://www.linkedin.com/in/arthur-borges-b3877a2b1/'}
+        </Text>
+      </Text>
       </ScrollView>
-      <StatusBar style="auto" />
       </View>
+      <StatusBar style="auto" />
     </View>
   );
 }
