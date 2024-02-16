@@ -9,11 +9,13 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@types/react-native-snap-carousel": "^3.8.10",
     "expo": "~50.0.6",
     "expo-status-bar": "~1.11.1",
     "nativewind": "^2.0.11",
     "react": "18.2.0",
-    "react-native": "0.73.4"
+    "react-native": "0.73.4",
+    "react-native-snap-carousel": "^3.9.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
