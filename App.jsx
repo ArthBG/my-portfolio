@@ -40,7 +40,7 @@ export default function App() {
 
       <Text className="font-extrabold text-2xl mx-auto pt-7">Arthur Borges</Text>
       <Text className="text-lg mx-auto pt-2" >Estudante de Desenvolvimento de Sistemas no SENAI Valinhos{'\n'}Cursando o terceiro ano do Ensino Médio</Text>
-      <ScrollView>
+      {/* <ScrollView> */}
       <Text className="font-semibold text-2xl mx-auto pt-5">Sobre:</Text>
       <Text className="text-base mx-auto pt-2" >Desenvolvedor Full Stack com conhecimentos em front-end (HTML, CSS, JavaScript, React, React Native). Especializado na criação de interfaces intuitivas e eficiência na construção de softwares. Comprometido com as melhores práticas e atualizações constantes, estou pronto para contribuir significativamente em projetos desafiadores.</Text>
         <View className="pt-5">
@@ -75,7 +75,7 @@ export default function App() {
           {'https://www.linkedin.com/in/arthur-borges-b3877a2b1/'}
         </Text>
       </Text>
-      </ScrollView>
+      {/* </ScrollView> */}
       </View>
       <StatusBar style="auto" />
     </View>
