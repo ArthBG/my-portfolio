@@ -21,11 +21,13 @@ export default function App() {
   ]
   return (
     <View>
-      {/* <Image source={require('./assets/images/icon.jpeg')} /> */}
-      <Text className="font-extrabold text-2xl mx-auto pt-20" >Arthur Borges</Text>
+      <View className="bg-blue-950 min-h-screen">
+      <Image className="rounded-full w-80 h-80 mx-auto" source={require('./assets/images/icon.jpeg')} />
+
+      <Text className="font-extrabold text-2xl mx-auto pt-7">Arthur Borges</Text>
       <Text className="text-lg mx-auto pt-5" ></Text>
       <Text className="text-lg mx-auto pt-2" >Estudante de Desenvolvimento de Sistemas no SENAI Valinhos{'\n'}Cursando o terceiro ano do Ensino Médio</Text>
-      <Text className="font-semibold text-2xl mx-auto pt-5" >Sobre:</Text>
+      <Text className="font-semibold text-2xl mx-auto pt-5">Sobre:</Text>
       <Text className="text-base mx-auto pt-2" >Desenvolvedor Full Stack com conhecimentos em front-end (HTML, CSS, JavaScript, React, React Native). Especializado na criação de interfaces intuitivas e eficiência na construção de softwares. Comprometido com as melhores práticas e atualizações constantes, estou pronto para contribuir significativamente em projetos desafiadores.</Text>
       <ScrollView className="h-fit">
       <Text className="font-semibold text-2xl mx-auto pt-7" >Projetos:</Text>
@@ -43,6 +45,7 @@ export default function App() {
         ))}
       </ScrollView>
       <StatusBar style="auto" />
+      </View>
     </View>
   );
 }
