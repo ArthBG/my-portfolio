@@ -40,9 +40,9 @@ export default function App() {
 
       <Text className="font-extrabold text-2xl mx-auto pt-7">Arthur Borges</Text>
       <Text className="text-lg mx-auto pt-2" >Estudante de Desenvolvimento de Sistemas no SENAI Valinhos{'\n'}Cursando o terceiro ano do Ensino Médio</Text>
-      {/* <ScrollView> */}
       <Text className="font-semibold text-2xl mx-auto pt-5">Sobre:</Text>
       <Text className="text-base mx-auto pt-2" >Desenvolvedor Full Stack com conhecimentos em front-end (HTML, CSS, JavaScript, React, React Native). Especializado na criação de interfaces intuitivas e eficiência na construção de softwares. Comprometido com as melhores práticas e atualizações constantes, estou pronto para contribuir significativamente em projetos desafiadores.</Text>
+       <ScrollView>
         <View className="pt-5">
           <Text className="font-bold text-xl text-center pt-2">Projetos:</Text>
           <Carousel
@@ -52,30 +52,30 @@ export default function App() {
             sliderWidth={300}
             itemWidth={300}
           />
-        </View>
       <Text className="font-semibold text-2xl mx-auto pt-5">Contato:</Text>
       <Text className="text-base mx-auto pt-2">
         <Text className="font-bold">E-mail:</Text>
         <Image className="w-10 h-10" source={require('./assets/images/gmail.png')} />
         <Text>
-          {'janbgsa@gmail.com'}
+          'janbgsart@gmail.com'
         </Text>
       </Text>
       <Text className="text-base mx-auto pt-2">
         <Text className="font-bold">Telefone:</Text>
         <Image className="w-10 h-10" source={require('./assets/images/whatsapp.png')} />
         <Text>
-          {'(19) 9 9713-7980'}
+          '(19) 9 9713-7980'
         </Text>
       </Text>
       <Text className="text-base mx-auto pt-2">
         <Text className="font-bold">LinkedIn:</Text>
         <Image className="w-10 h-10" source={require('./assets/images/linkedin.png')} />
         <Text>
-          {'https://www.linkedin.com/in/arthur-borges-b3877a2b1/'}
+          'https://www.linkedin.com/in/arthur-borges-b3877a2b1/'
         </Text>
       </Text>
-      {/* </ScrollView> */}
+      </View>
+      </ScrollView> 
       </View>
       <StatusBar style="auto" />
     </View>
