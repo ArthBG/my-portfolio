@@ -22,17 +22,17 @@ export default function App() {
     }
   ]
 
-  const _renderItem = ({ item, index }) => {
-    return (
-      <View>
-        <Image source={item.image} style="w-full h-48 object-cover" />
-        <Text className="font-bold text-lg">{item.name}</Text>
-        <Text>{item.description}</Text>
-        <Text>{item.tecnologys}</Text>
-        <Text>{item.link}</Text>
-      </View>
-    );
-  };
+  // const _renderItem = ({ item, index }) => {
+  //   return (
+  //     <View>
+  //       <Image source={item.image} style="w-full h-48 object-cover" />
+  //       <Text className="font-bold text-lg">{item.name}</Text>
+  //       <Text>{item.description}</Text>
+  //       <Text>{item.tecnologys}</Text>
+  //       <Text>{item.link}</Text>
+  //     </View>
+  //   );
+  // };
   return (
     <View  className="bg-slate-200"> 
       <View>
@@ -40,18 +40,37 @@ export default function App() {
 
       <Text className="font-extrabold text-2xl mx-auto pt-7">Arthur Borges</Text>
       <Text className="text-lg mx-auto pt-2" >Estudante de Desenvolvimento de Sistemas no SENAI Valinhos{'\n'}Cursando o terceiro ano do Ensino Médio</Text>
+       <ScrollView>
       <Text className="font-semibold text-2xl mx-auto pt-5">Sobre:</Text>
       <Text className="text-base mx-auto pt-2" >Desenvolvedor Full Stack com conhecimentos em front-end (HTML, CSS, JavaScript, React, React Native). Especializado na criação de interfaces intuitivas e eficiência na construção de softwares. Comprometido com as melhores práticas e atualizações constantes, estou pronto para contribuir significativamente em projetos desafiadores.</Text>
-       <ScrollView>
         <View className="pt-5">
           <Text className="font-bold text-xl text-center pt-2">Projetos:</Text>
-          <Carousel
+       <ScrollView horizontal>
+          {/* <Carousel
             ref={(c) => { this._carousel = c; }}
             data={projects}
             renderItem={_renderItem}
             sliderWidth={300}
             itemWidth={300}
-          />
+          /> */}
+
+          <View>
+            {
+              projects.map((project, index) => {
+                return (
+                  <View key={index} className="w-80 h-80 mx-auto">
+                    <Image source={project.image} className="w-80 h-64" />
+                    <Text className="font-bold text-lg text-center">{project.name}</Text>
+                    <Text className="text-center">{project.description}</Text>
+                    <Text className="text-center">{project.tecnologys}</Text>
+                    <Text className="text-center">{project.link}</Text>
+                  </View>
+                )
+              })
+            }
+            </View>
+          </ScrollView> 
+        </View>
       <Text className="font-semibold text-2xl mx-auto pt-5">Contato:</Text>
       <Text className="text-base mx-auto pt-2">
         <Text className="font-bold">E-mail:</Text>
@@ -74,9 +93,9 @@ export default function App() {
           'https://www.linkedin.com/in/arthur-borges-b3877a2b1/'
         </Text>
       </Text>
+      </ScrollView>
       </View>
-      </ScrollView> 
-      </View>
+
       <StatusBar style="auto" />
     </View>
   );
