@@ -36,7 +36,7 @@ export default function App() {
   return (
     <View  className="bg-slate-200"> 
       <View>
-      <Image className="rounded-full w-80 h-80 mx-auto" source={require('./assets/images/icon.jpeg')} />
+      <Image className="rounded-full w-64 h-64 mx-auto pt-" source={require('./assets/images/icon.jpeg')} />
 
       <Text className="font-extrabold text-2xl mx-auto pt-7">Arthur Borges</Text>
       <Text className="text-lg mx-auto pt-2" >Estudante de Desenvolvimento de Sistemas no SENAI Valinhos{'\n'}Cursando o terceiro ano do Ensino Médio</Text>
@@ -53,12 +53,11 @@ export default function App() {
             sliderWidth={300}
             itemWidth={300}
           /> */}
-
-          <View>
+          <View className="mx-auto">
             {
               projects.map((project, index) => {
                 return (
-                  <View key={index} className="w-80 h-80 mx-auto">
+                  <View key={index} className="w-80 h-80">
                     <Image source={project.image} className="w-80 h-64" />
                     <Text className="font-bold text-lg text-center">{project.name}</Text>
                     <Text className="text-center">{project.description}</Text>
@@ -69,7 +68,8 @@ export default function App() {
               })
             }
             </View>
-          </ScrollView> 
+            
+              </ScrollView> 
         </View>
       <Text className="font-semibold text-2xl mx-auto pt-5">Contato:</Text>
       <Text className="text-base mx-auto pt-2">
