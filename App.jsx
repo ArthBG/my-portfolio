@@ -23,7 +23,7 @@ export default function App() {
     {
       id: 2,
       name: "RoyaleOc",
-      description: "Projeto de com o objetivo de criar um site completo sobre o jogo Clash Royale.",
+      description: "Projeto com o objetivo de criar um site completo sobre o jogo Clash Royale.",
       tecnologys: "HTML, CSS, JavaScript, React, Node.js, Netlify.",
       image: require('./assets/images/royaleoc.png'),
       link: "royaleoc.netlify.app"
@@ -55,8 +55,8 @@ export default function App() {
       <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="font-extrabold text-2xl mx-auto pt-7">Arthur Borges</Text>
       <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="text-lg mx-auto pt-2" >Estudante de Desenvolvimento de Sistemas no SENAI Valinhos{'\n'}Cursando o terceiro ano do Ensino Médio</Text>
       <View className="flex justify-center m-auto">
-        <TouchableOpacity onPress={darkModeToggle} className="w-20 h-10 rounded-full mt-5">
-          <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="text-center pt-2">Dark Mode</Text>
+        <TouchableOpacity onPress={darkModeToggle} className="rounded-full w-10 h-10 mt-9">
+          <Text className="text-center">{darkMode? "☀" : "🌙"}</Text>
         </TouchableOpacity>
       </View>
       <ScrollView className="w-full h-full">
@@ -84,7 +84,11 @@ export default function App() {
             
               {/* </ScrollView>  */}
         </View>
-      <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="font-semibold text-2xl mx-auto pt-10">Contato:</Text>
+        <View className="m-auto">
+        <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="font-semibold text-2xl mx-auto pt-10">Habilidades:</Text>
+        <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="text-base mx-auto pt-2">HTML, CSS, JavaScript, React, React Native, Node.js, Git, GitHub, Vercel, Netlify.</Text>
+      </View>
+      <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="font-semibold text-2xl mx-auto pt-20">Contato:</Text>
       <View>
       <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="text-base m-2 p-8">
         <Image className="w-16 h-16" source={require('./assets/images/gmail.png')} />
@@ -108,10 +112,7 @@ export default function App() {
         </Text> */}
       </Text>
       </View>
-      <View className="m-auto">
-        <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="font-semibold text-2xl mx-auto pt-10">Habilidades:</Text>
-        <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="text-base mx-auto pt-2">HTML, CSS, JavaScript, React, React Native, Node.js, Git, GitHub, Vercel, Netlify.</Text>
-      </View>
+      
       <View className="m-auto">
         <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="mx-auto pt-10">Todos direitos Reservados</Text>
       </View>
