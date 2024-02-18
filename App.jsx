@@ -84,28 +84,34 @@ export default function App() {
             
               {/* </ScrollView>  */}
         </View>
-      <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="font-semibold text-2xl mx-auto pt-5">Contato:</Text>
+      <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="font-semibold text-2xl mx-auto pt-10">Contato:</Text>
+      <View className="flex">
       <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="text-base mx-auto pt-2">
-        <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="font-bold">E-mail:</Text>
         <Image className="w-10 h-10" source={require('./assets/images/gmail.png')} />
+        <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="font-bold">E-mail: </Text>
         <Text>
           janbgsart@gmail.com
         </Text>
       </Text>
       <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="text-base mx-auto pt-2">
-        <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="font-bold">Telefone:</Text>
         <Image className="w-10 h-10" source={require('./assets/images/whatsapp.png')} />
+        <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="font-bold">Telefone: </Text>
         <Text>
           (19) 9 9713-7980
         </Text>
       </Text>
       <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="text-base mx-auto pt-2">
-        <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="font-bold">LinkedIn:</Text>
         <Image className="w-10 h-10" source={require('./assets/images/linkedin.png')} />
-        <Text>
+        <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="font-bold">LinkedIn</Text>
+        {/* <Text>
           https://www.linkedin.com/in/arthur-borges-b3877a2b1/
-        </Text>
+        </Text> */}
       </Text>
+      </View>
+      <View className="m-auto">
+        <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="font-semibold text-2xl mx-auto pt-10">Habilidades:</Text>
+        <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="text-base mx-auto pt-2">HTML, CSS, JavaScript, React, React Native, Node.js, Git, GitHub, Vercel, Netlify.</Text>
+      </View>
       </ScrollView>
       </View>
 
