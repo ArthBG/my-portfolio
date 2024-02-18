@@ -1,9 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
-import { Text, View, Image, ScrollView } from 'react-native';
-import Carousel from 'react-native-snap-carousel';
+import { Text, View, Image, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+import React, { useState } from 'react';
 
 
 export default function App() {
+
+  const [darkMode, setDarkMode] = useState(false);
+
+  const darkModeToggle = () => {
+    setDarkMode(!darkMode);
+  }
   
   const projects = [
     {
@@ -22,37 +28,24 @@ export default function App() {
     }
   ]
 
-  // const _renderItem = ({ item, index }) => {
-  //   return (
-  //     <View>
-  //       <Image source={item.image} style="w-full h-48 object-cover" />
-  //       <Text className="font-bold text-lg">{item.name}</Text>
-  //       <Text>{item.description}</Text>
-  //       <Text>{item.tecnologys}</Text>
-  //       <Text>{item.link}</Text>
-  //     </View>
-  //   );
-  // };
   return (
-    <View  className="bg-slate-200"> 
+    <View style={darkMode ? {backgroundColor: 'black', color: 'white'} : {backgroundColor: 'white', color: 'black'}}> 
       <View>
-      <Image className="rounded-full w-64 h-64 mx-auto pt-" source={require('./assets/images/icon.jpeg')} />
+      <Image className="rounded-full w-64 h-64 mx-auto pt-4" source={require('./assets/images/icon.jpeg')} />
 
-      <Text className="font-extrabold text-2xl mx-auto pt-7">Arthur Borges</Text>
-      <Text className="text-lg mx-auto pt-2" >Estudante de Desenvolvimento de Sistemas no SENAI Valinhos{'\n'}Cursando o terceiro ano do Ensino Médio</Text>
-       <ScrollView>
+      <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="font-extrabold text-2xl mx-auto pt-7">Arthur Borges</Text>
+      <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="text-lg mx-auto pt-2" >Estudante de Desenvolvimento de Sistemas no SENAI Valinhos{'\n'}Cursando o terceiro ano do Ensino Médio</Text>
+      <View className="flex justify-center mx-auto">
+        <TouchableOpacity onPress={darkModeToggle} className="bg-gray-300 w-20 h-10 rounded-full mt-5">
+          <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="text-center pt-2">Dark Mode</Text>
+        </TouchableOpacity>
+      </View>
+      <ScrollView className="w-full h-full">
       <Text className="font-semibold text-2xl mx-auto pt-5">Sobre:</Text>
       <Text className="text-base mx-auto pt-2" >Desenvolvedor Full Stack com conhecimentos em front-end (HTML, CSS, JavaScript, React, React Native). Especializado na criação de interfaces intuitivas e eficiência na construção de softwares. Comprometido com as melhores práticas e atualizações constantes, estou pronto para contribuir significativamente em projetos desafiadores.</Text>
         <View className="pt-5">
           <Text className="font-bold text-xl text-center pt-2">Projetos:</Text>
        <ScrollView horizontal>
-          {/* <Carousel
-            ref={(c) => { this._carousel = c; }}
-            data={projects}
-            renderItem={_renderItem}
-            sliderWidth={300}
-            itemWidth={300}
-          /> */}
           <View className="mx-auto">
             {
               projects.map((project, index) => {
