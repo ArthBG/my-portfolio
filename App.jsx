@@ -41,10 +41,10 @@ export default function App() {
         </TouchableOpacity>
       </View>
       <ScrollView className="w-full h-full">
-      <Text className="font-semibold text-2xl mx-auto pt-5">Sobre:</Text>
-      <Text className="text-base mx-auto pt-2" >Desenvolvedor Full Stack com conhecimentos em front-end (HTML, CSS, JavaScript, React, React Native). Especializado na criação de interfaces intuitivas e eficiência na construção de softwares. Comprometido com as melhores práticas e atualizações constantes, estou pronto para contribuir significativamente em projetos desafiadores.</Text>
+      <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="font-semibold text-2xl mx-auto pt-5">Sobre:</Text>
+      <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="text-base mx-auto pt-2" >Desenvolvedor Full Stack com conhecimentos em front-end (HTML, CSS, JavaScript, React, React Native). Especializado na criação de interfaces intuitivas e eficiência na construção de softwares. Comprometido com as melhores práticas e atualizações constantes, estou pronto para contribuir significativamente em projetos desafiadores.</Text>
         <View className="pt-5">
-          <Text className="font-bold text-xl text-center pt-2">Projetos:</Text>
+          <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="font-bold text-xl text-center pt-2">Projetos:</Text>
        <ScrollView horizontal>
           <View className="mx-auto">
             {
@@ -52,10 +52,10 @@ export default function App() {
                 return (
                   <View key={index} className="w-80 h-80">
                     <Image source={project.image} className="w-80 h-64" />
-                    <Text className="font-bold text-lg text-center">{project.name}</Text>
-                    <Text className="text-center">{project.description}</Text>
-                    <Text className="text-center">{project.tecnologys}</Text>
-                    <Text className="text-center">{project.link}</Text>
+                    <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="font-bold text-lg text-center">{project.name}</Text>
+                    <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="text-center">{project.description}</Text>
+                    <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="text-center">{project.tecnologys}</Text>
+                    <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="text-center">{project.link}</Text>
                   </View>
                 )
               })
@@ -64,23 +64,23 @@ export default function App() {
             
               </ScrollView> 
         </View>
-      <Text className="font-semibold text-2xl mx-auto pt-5">Contato:</Text>
-      <Text className="text-base mx-auto pt-2">
-        <Text className="font-bold">E-mail:</Text>
+      <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="font-semibold text-2xl mx-auto pt-5">Contato:</Text>
+      <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="text-base mx-auto pt-2">
+        <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="font-bold">E-mail:</Text>
         <Image className="w-10 h-10" source={require('./assets/images/gmail.png')} />
         <Text>
           'janbgsart@gmail.com'
         </Text>
       </Text>
-      <Text className="text-base mx-auto pt-2">
-        <Text className="font-bold">Telefone:</Text>
+      <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="text-base mx-auto pt-2">
+        <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="font-bold">Telefone:</Text>
         <Image className="w-10 h-10" source={require('./assets/images/whatsapp.png')} />
         <Text>
           '(19) 9 9713-7980'
         </Text>
       </Text>
-      <Text className="text-base mx-auto pt-2">
-        <Text className="font-bold">LinkedIn:</Text>
+      <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="text-base mx-auto pt-2">
+        <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="font-bold">LinkedIn:</Text>
         <Image className="w-10 h-10" source={require('./assets/images/linkedin.png')} />
         <Text>
           'https://www.linkedin.com/in/arthur-borges-b3877a2b1/'
