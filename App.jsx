@@ -28,22 +28,22 @@ export default function App() {
       image: require('./assets/images/royaleoc.png'),
       link: "royaleoc.netlify.app"
     },
-    {
-      id: 3,
-      name: "OctoPlay",
-      description: "Projeto solicitado pelo curso do SENAI Valinhos, com o objetivo de criar uma biblioteca de jogos digitais.",
-      tecnologys: "HTML, CSS, JavaScript, React, Node.js, Vercel.",
-      image: require('./assets/images/octoplay.png'),
-      link: "octoplay.vercel.app"
-    },
-    {
-      id: 4,
-      name: "RoyaleOc",
-      description: "Projeto de com o objetivo de criar um site completo sobre o jogo Clash Royale.",
-      tecnologys: "HTML, CSS, JavaScript, React, Node.js, Netlify.",
-      image: require('./assets/images/royaleoc.png'),
-      link: "royaleoc.netlify.app"
-    },
+    // {
+    //   id: 3,
+    //   name: "OctoPlay",
+    //   description: "Projeto solicitado pelo curso do SENAI Valinhos, com o objetivo de criar uma biblioteca de jogos digitais.",
+    //   tecnologys: "HTML, CSS, JavaScript, React, Node.js, Vercel.",
+    //   image: require('./assets/images/octoplay.png'),
+    //   link: "octoplay.vercel.app"
+    // },
+    // {
+    //   id: 4,
+    //   name: "RoyaleOc",
+    //   description: "Projeto de com o objetivo de criar um site completo sobre o jogo Clash Royale.",
+    //   tecnologys: "HTML, CSS, JavaScript, React, Node.js, Netlify.",
+    //   image: require('./assets/images/royaleoc.png'),
+    //   link: "royaleoc.netlify.app"
+    // },
 
   ]
 
@@ -85,23 +85,23 @@ export default function App() {
               {/* </ScrollView>  */}
         </View>
       <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="font-semibold text-2xl mx-auto pt-10">Contato:</Text>
-      <View className="flex">
-      <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="text-base mx-auto pt-2">
-        <Image className="w-10 h-10" source={require('./assets/images/gmail.png')} />
+      <View>
+      <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="text-base mx-auto m-2">
+        <Image className="w-16 h-20" source={require('./assets/images/gmail.png')} />
         <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="font-bold">E-mail: </Text>
         <Text>
           janbgsart@gmail.com
         </Text>
       </Text>
-      <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="text-base mx-auto pt-2">
-        <Image className="w-10 h-10" source={require('./assets/images/whatsapp.png')} />
+      <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="text-base mx-auto m-2">
+        <Image className="w-16 h-20" source={require('./assets/images/whatsapp.png')} />
         <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="font-bold">Telefone: </Text>
         <Text>
           (19) 9 9713-7980
         </Text>
       </Text>
-      <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="text-base mx-auto pt-2">
-        <Image className="w-10 h-10" source={require('./assets/images/linkedin.png')} />
+      <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="text-base mx-auto m-2">
+        <Image className="w-16 h-20" source={require('./assets/images/linkedin.png')} />
         <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="font-bold">LinkedIn</Text>
         {/* <Text>
           https://www.linkedin.com/in/arthur-borges-b3877a2b1/
@@ -111,6 +111,9 @@ export default function App() {
       <View className="m-auto">
         <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="font-semibold text-2xl mx-auto pt-10">Habilidades:</Text>
         <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="text-base mx-auto pt-2">HTML, CSS, JavaScript, React, React Native, Node.js, Git, GitHub, Vercel, Netlify.</Text>
+      </View>
+      <View className="m-auto">
+        <Text style={darkMode? {color: 'white'} : {color: 'black'}} className="mx-auto pt-10">Todos direitos Reservados</Text>
       </View>
       </ScrollView>
       </View>
