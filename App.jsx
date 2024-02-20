@@ -9,6 +9,7 @@ export default function App() {
 
   const [darkMode, setDarkMode] = useState(false);
 
+  //Mutate the state of darkMode
   const darkModeToggle = () => {
     setDarkMode(!darkMode);
   }
